@@ -36,3 +36,14 @@ let obj = {
 };
 
 obj.f();
+
+
+// Summary 
+// Context: nodejs + non strict 
+
+// 1. global area => this = {}
+// 2. function in global area => this = global object 
+// 3. direct function in an object => this = object itself 
+// 4. indirect function in an object => global object 
+
+// case 2 and 4 behaves same 

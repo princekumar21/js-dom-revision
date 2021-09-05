@@ -38,3 +38,14 @@ let obj = {
 };
 
 obj.f();
+
+
+// Summary 
+// Context: nodejs + strict 
+
+// 1. global area => this = {}
+// 2. function in global area => this = undefined  (diff from non strict)
+// 3. direct function in an object => this = object itself 
+// 4. indirect function in an object => undefined   (diff from non strict)
+
+// case 2 and 4 behaves same 
